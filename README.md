@@ -1,4 +1,4 @@
-PromptHub is a user-friendly web application that generates thought-provoking prompts and allows users to post their creative answers for others to engage and interact with. Whether you're looking for inspiration or eager to showcase your imaginative responses and unleash your creativity at PromptHub!
+PromptHub is a user-friendly web application that generates thought-provoking prompts and allows users to post their creative answers for others to engage and interact with. Whether you're looking for inspiration or eager to revel your imaginative responses in the delight of prompts collectively experienced!
 
 PromptHub is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

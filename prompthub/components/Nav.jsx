@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { SignIn, SignOut, useSession, getProviders, signOut, signIn } from "next-auth/react";
  
-const Nav = () => {
+  //Navigation-Bar layout
+  const Nav = () => {
   const { data: session } = useSession();
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);

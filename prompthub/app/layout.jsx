@@ -2,6 +2,7 @@ import '@styles/globals.css';
 import Nav from '@components/Nav';
 import Provider from '@components/Provider';
 
+// Root layout of the application.
 export const metadata ={
     title: "PromptHub",
     description:"Discover & Share AI Prompts"

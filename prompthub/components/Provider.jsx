@@ -3,6 +3,7 @@ import React from 'react'
 
 import { SessionProvider } from 'next-auth/react';
 
+// User session
 const Provider = ({ children, session}) => {
   return (
     <SessionProvider session={session}>

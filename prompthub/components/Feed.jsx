@@ -3,6 +3,7 @@
 import {useState, useEffect} from 'react';
 import PromptCard from './PromptCard';
 
+// Feed Layout
 const PromptCardList = ({ data, handleTagClick }) =>{
   return(
     <div className='mt-16 prompt_layout'>
@@ -17,6 +18,7 @@ const PromptCardList = ({ data, handleTagClick }) =>{
     </div>
   )
 }
+
 const Feed = () => {
   const [ searchText, setSearchText ] = useState('');
   const [ posts, setPosts ] = useState([]);
@@ -24,6 +26,8 @@ const Feed = () => {
   const handleSearchChange = (e) =>{
 
   }
+
+// Fetch all Posts on page load
 useEffect(() => {
   const fetchPosts = async ()=> {
     const response = await fetch('/api/prompt');
@@ -31,8 +35,8 @@ useEffect(() => {
 
     setPosts(data);
   }
-
   fetchPosts();
+  
 },[]);
 
   return (

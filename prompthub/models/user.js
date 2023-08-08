@@ -1,3 +1,4 @@
+// Database Schema of Users
 import { Schema, model, models } from "mongoose";
 
 const UserSchema = new Schema({

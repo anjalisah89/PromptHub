@@ -1,12 +1,13 @@
-import { Schema, model, models} from "mongoose";
+// Database Schema of Prompts
+import { Schema, model, models } from "mongoose";
 
 const PromptSchema = new Schema({
-    creator:{
+    creator: {
         type: Schema.Types.ObjectId,
         ref: 'User',
     },
     prompt: {
-        type : String,
+        type: String,
         required: [true, 'Prompt is required.']
     },
     tag: {
@@ -15,6 +16,6 @@ const PromptSchema = new Schema({
     }
 });
 
-const Prompt = models.prompt|| model('Prompt',PromptSchema);
+const PromptModel = models.Prompt || model('Prompt', PromptSchema);
 
-export default Prompt;
+export default PromptModel;

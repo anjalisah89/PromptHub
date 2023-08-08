@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+//Form Layout
 const Form = ({
   type,
   post,
@@ -8,7 +9,8 @@ const Form = ({
   handleSubmit
 }) => {
   return (
-    <section className=' w-full max-w-full flex-center flex-col'>
+    // Form layout used in Create post and Edit post
+    <section className=' w-full max-w-full flex-left flex-col'>
       <h1 className='head_text text-left'>
         <span className='blue_gradient'>{type} Post</span></h1>
         <p className='desc text-left max-w-md'> {type} & Share amazing prompts with others and personalize your feed based on your own interests. Unleash your creativity while discovering the diverse minds of others with any AI-powered platform. </p>

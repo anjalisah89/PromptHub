@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation'
 
 import Form from '@components/Form';
 
+// create a prompt
 const CreatePrompt = () => {
     const router = useRouter();
     const { data: session } = useSession();
@@ -20,6 +21,8 @@ const CreatePrompt = () => {
         e.preventDefault();
         setSubmitting(true);
 
+        // send new prompt data via api by submitting 
+
         try{
             const response = await fetch('/api/prompt/new', {
                 method:'POST',
@@ -30,6 +33,9 @@ const CreatePrompt = () => {
                 })
 
             })
+
+            // push data to the root feed
+
             if(response.ok){
                 router.push('/');
             }

@@ -29,6 +29,7 @@ const Form = ({
         
         <div className='flex-end mx-3 pt-5 mb-5 gap-4'>
           <Link href="/" className='text-gray-500'>Cancel</Link>
+          
           <button type='submit' disabled={submitting} className='px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white'>{submitting? `${type}...` : type}</button>
           </div>
       </form>

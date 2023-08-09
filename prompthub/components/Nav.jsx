@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { SignIn, SignOut, useSession, getProviders, signOut, signIn } from "next-auth/react";
+import { useSession, getProviders, signOut, signIn } from "next-auth/react";
  
   //Navigation-Bar layout
   const Nav = () => {

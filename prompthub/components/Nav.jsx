@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useSession, getProviders, signOut, signIn } from "next-auth/react";
- 
+
   //Navigation-Bar layout
   const Nav = () => {
   const { data: session } = useSession();
@@ -32,7 +32,11 @@ import { useSession, getProviders, signOut, signIn } from "next-auth/react";
      <div className="flex gap-3 md:gap-5">
       <Link href="/create-prompt" className="black_btn">
         Create Post</Link>
-        <button type="button" onClick={signOut} className="outline_btn">Sign Out</button>
+        <button type="button" onClick={() => { 
+          signOut({
+            callbackUrl: `${window.location.origin}`
+          }) ;
+          }} className="outline_btn">Sign Out</button>
         <Link href="/profile">
           <Image src={session?.user.image} width={37} height={37} className="rounded-full" alt="profile"/>
         </Link>
@@ -61,7 +65,9 @@ import { useSession, getProviders, signOut, signIn } from "next-auth/react";
             <Link href="/profile" className="dropdown_link" onClick={() => setToggleDropdown(false)}>My Profile</Link>
             <Link href="/create-prompt" className="dropdpwn_link" onClick={() => setToggleDropdown(false)}>Create Prompt</Link>
             <button type="button" onClick={() => {
-              setToggleDropdown(false); signOut();
+              setToggleDropdown(false); signOut({
+                callbackUrl: `${window.location.origin}`
+              });
             }} className=" mt-5 w-full black_btn">Sign Out</button>
           </div>
         )}

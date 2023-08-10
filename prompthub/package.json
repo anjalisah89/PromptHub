@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "autoprefixer": "10.4.14",
     "bcrypt": "^5.1.0",
     "mongodb": "^5.7.0",

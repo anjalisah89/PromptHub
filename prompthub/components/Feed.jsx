@@ -25,7 +25,7 @@ const Feed = () => {
   // Search states
   const [searchText, setSearchText] = useState("");
   const [searchTimeout, setSearchTimeout] = useState(null);
-  const [searchedResults, setSearchedResults] = useState([]);
+  const [searchedResults, setSearchedResults] = useState([]); 
 
   const fetchPosts = async () => {
     const response = await fetch("/api/prompt");
@@ -38,6 +38,7 @@ const Feed = () => {
 useEffect(() => {
   fetchPosts();
 }, []);
+
 
 //Filter Prompt by searching through text
 const filterPrompts = (searchtext) => {

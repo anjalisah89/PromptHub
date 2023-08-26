@@ -2,6 +2,9 @@ PromptHub is a user-friendly web application that generates thought-provoking pr
 
 PromptHub is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![UI](https://github.com/uno4ce/PromptHub/assets/115478181/e98b3584-f5e8-4d6d-8f11-c8955ff6dd3b)
+
+
 ## Getting Started
 
 First, run the development server:
